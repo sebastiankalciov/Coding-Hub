@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "JetBrains Mono ExtraBold";
+    src: url('./JetBrains_Mono/JetBrainsMono-ExtraBold.ttf');
+}
+
+.label {
+    -fx-font-family: "JetBrains Mono ExtraBold";
+    font-color: #FFFFFF;
+}
+
+#authMessage {
+    -fx-font-family: "JetBrains Mono ExtraBold";
+    font-color: #eeaf30;
+}

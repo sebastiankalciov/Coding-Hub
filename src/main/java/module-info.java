@@ -6,6 +6,8 @@ module com.example.codinghub {
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
     requires java.sql;
+    requires bcrypt;
+    requires jbcrypt;
 
     opens com.example.codinghub to javafx.fxml;
     exports com.example.codinghub;

@@ -14,6 +14,10 @@ import java.awt.event.ActionEvent;
 import java.io.IOException;
 
 public class LoginController {
+
+    @FXML
+    public Label subtitle;
+
     @FXML
     private TextField emailField;
 

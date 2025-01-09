@@ -21,7 +21,7 @@ public class DatabaseConnection {
             String dbURL = "jdbc:mysql://localhost:3306/codinghub";
             this.connection = DriverManager.getConnection(dbURL, "root", "root");
         } catch (SQLException e) {
-            System.out.printf("Error connecting to DB: %s", e.getMessage());
+            System.out.printf("error connecting to db: %s", e.getMessage());
             return;
         }
     }

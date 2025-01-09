@@ -55,13 +55,12 @@ public class AuthentificationHandler {
         }
         return "user not found";
     }
-
     
     public String validateLogin(String email, String password) {
         if (email == null || email.isEmpty() || password == null || password.isEmpty()) {
             return "Please provide your credentials";
         }
-        if ()
+        return "logged in successfully";
     }
 
     public static boolean patternMatches(String emailAddress, String regexPattern) {

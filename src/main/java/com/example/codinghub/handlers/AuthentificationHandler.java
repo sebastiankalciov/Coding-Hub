@@ -3,7 +3,6 @@ package com.example.codinghub.handlers;
 import com.example.codinghub.DatabaseConnection;
 import org.mindrot.jbcrypt.BCrypt;
 import java.sql.*;
-import java.util.regex.Pattern;
 
 public class AuthentificationHandler {
 
@@ -15,6 +14,7 @@ public class AuthentificationHandler {
         String hashedPassword = BCrypt.hashpw(unHashedPassword, BCrypt.gensalt());
         String sql = "INSERT INTO users (email, hashedPassword) VALUES (?, ?)";
         DatabaseConnection database = new DatabaseConnection();
+
         try (PreparedStatement preparedStatement = database.connection.prepareStatement(sql)) {
 
             preparedStatement.setString(1, email);
@@ -30,17 +30,17 @@ public class AuthentificationHandler {
                 e.printStackTrace();
             }
             return "register failed";
-
         }
-
     }
 
     public String login (String email, String unhashedPassword) throws SQLException {
         String sql = "SELECT hashedPassword FROM users WHERE email = ?";
         DatabaseConnection database = new DatabaseConnection();
+
         try (PreparedStatement preparedStatement = database.connection.prepareStatement(sql)) {
             preparedStatement.setString(1, email);
             ResultSet resultSet = preparedStatement.executeQuery();
+
             if (resultSet.next()) {
                 String storedHash = resultSet.getString("hashedPassword");
                 if (BCrypt.checkpw(unhashedPassword, storedHash)) {

@@ -9,6 +9,7 @@ module com.example.codinghub {
     requires jbcrypt;
     requires mysql.connector.j;
     requires junit;
+    requires org.python.jython2;
 
     opens com.example.codinghub to javafx.fxml;
     exports com.example.codinghub;

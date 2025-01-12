@@ -8,10 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-
-
 public class HomeController {
-
 
     public void onSolveButtonClick(javafx.event.ActionEvent event) throws IOException {
         goToExerciseScene(event);

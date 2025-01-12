@@ -4,30 +4,36 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Font?>
-<SplitPane dividerPositions="0.48161764705882343"
-           prefHeight="1280"
-           prefWidth="2048"
-           xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="com.example.codinghub.controllers.ExerciseController">
+<SplitPane dividerPositions="0.48161764705882343" prefHeight="1280" prefWidth="2048" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.codinghub.controllers.ExerciseController">
 <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: &quot;#F5EFE7&quot;;">
         <children>
             <Label layoutX="6.0" text="Instructions" textFill="#213555">
                 <font>
-                    <Font name="JetBrainsMono NF ExtraBold" size="20.0" />
+                    <Font name="JetBrainsMono NF ExtraBold" size="24.0" />
+                </font>
+            </Label>
+            <Label fx:id="exerciseDescription" layoutX="6.0" layoutY="50.0" textFill="#213555">
+                <font>
+                    <Font name="JetBrainsMono NF ExtraBold" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="exerciseInstructions" layoutX="6.0" layoutY="180.0" textFill="#213555">
+                <font>
+                    <Font name="JetBrainsMono NF ExtraBold" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="examples" layoutX="6.0" layoutY="310.0" textFill="#213555">
+                <font>
+                    <Font name="JetBrainsMono NF ExtraBold" size="18.0" />
                 </font>
             </Label>
         </children>
-        <Button layoutX="100.0"
-                layoutY="820.0"
-                mnemonicParsing="false"
-                prefHeight="60.0"
-                prefWidth="120.0"
-                onAction="#onReturnButtonClick"
-                text="Return to exercises"
-                style="-fx-background-color: &quot;#D8C4B6&quot;; -fx-background-radius: 5"
-                textFill="#fff"
-        />
+        <Button layoutX="6.0" layoutY="840.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" onAction="#onReturnButtonClick" text="Return to exercises" style="-fx-background-color: &quot;#D8C4B6&quot;; -fx-background-radius: 5" textFill="#213555">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
     </AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="446.0" style="-fx-background-color: &quot;#F5EFE7&quot;;">
         <children>
@@ -36,15 +42,25 @@
                     <Font name="JetBrainsMono NF ExtraBold" size="20.0" />
                 </font>
             </Label>
-            <TextArea layoutX="4.0" layoutY="37.0" prefHeight="720.0" prefWidth="556.0" promptText="Write down your solution" style="-fx-background-color: &quot;#000&quot;;" wrapText="true" />
-            <Button layoutX="560.0"
-                    layoutY="740.0"
-                    mnemonicParsing="false"
-                    prefHeight="26.0"
-                    prefWidth="58.0"
-                    text="Run"
-            />
+            <TextArea layoutX="4.0" layoutY="37.0" prefHeight="420.0" prefWidth="580.0" promptText="Write down your solution" style="-fx-background-color: &quot;#000&quot;; -fx-background-radius: 10; -fx-font-size: 20" fx:id="rawCode" wrapText="true"/>
 
-        </children></AnchorPane>
+            <Pane layoutX="4.0" layoutY="540.0" prefHeight="300.0" prefWidth="580.0" style="-fx-background-color: &quot;#213555&quot;; -fx-background-radius: 10;">
+                <children>
+                    <Label layoutX="19.0" layoutY="13.0" text="Code output" textFill="#fff">
+                        <font>
+                            <Font name="JetBrainsMono NF Medium" size="24.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="codeOutputMessage" layoutX="19.0" layoutY="60.0" textFill="#fff"/>
+                </children>
+            </Pane>
+            <Button layoutX="525.0" layoutY="850.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" onAction="#onRunButtonClick" textFill="#213555" style="-fx-background-color: &quot;#D8C4B6&quot;; -fx-background-radius: 5;" text="Run">
+                <font>
+                    <Font name="System Bold" size="16.0" />
+                </font>
+            </Button>
+
+        </children>
+    </AnchorPane>
 </items>
 </SplitPane>

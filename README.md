@@ -1,5 +1,5 @@
 # Coding-Hub
-A platform where developers can improve coding skills
+## A platform where developers can improve coding skills
 
 It is a Desktop Application with:
 

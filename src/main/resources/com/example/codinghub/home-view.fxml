@@ -6,19 +6,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1280" prefWidth="2048" style="-fx-background-color: &quot;103031&quot;;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.codinghub.controllers.HomeController">
+<AnchorPane prefHeight="1280" prefWidth="2048" style="-fx-background-color: &quot;F5EFE7&quot;;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.codinghub.controllers.HomeController">
    <children>
-      <Label layoutX="61.0" layoutY="31.0" text="Welcome to Coding Hub - your place to improve the coding skills" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="31.0" text="Welcome to Coding Hub - your place to improve the coding skills" textFill="#213555">
          <font>
             <Font name="JetBrainsMono NF ExtraBold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="61.0" layoutY="125.0" text="Choose a problem to tackle today" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="125.0" text="Choose a problem to tackle today" textFill="#3E5879">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <Pane layoutX="61.0" layoutY="185.0" prefHeight="200.0" prefWidth="630.0" style="-fx-background-color: &quot;#c6d1d9&quot;; -fx-background-radius: 10;">
+      <Pane layoutX="61.0" layoutY="185.0" prefHeight="200.0" prefWidth="630.0" style="-fx-background-color: &quot;#D8C4B6&quot;; -fx-background-radius: 10;">
          <children>
             <Label layoutX="19.0" layoutY="13.0" text="Problem 1">
                <font>

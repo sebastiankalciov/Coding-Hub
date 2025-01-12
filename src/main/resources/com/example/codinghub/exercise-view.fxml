@@ -10,23 +10,41 @@
            xmlns:fx="http://javafx.com/fxml/1"
            fx:controller="com.example.codinghub.controllers.ExerciseController">
 <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: &quot;#201f1e&quot;;">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: &quot;#F5EFE7&quot;;">
         <children>
-            <Label layoutX="6.0" text="Instructions" textFill="WHITE">
+            <Label layoutX="6.0" text="Instructions" textFill="#213555">
                 <font>
                     <Font name="JetBrainsMono NF ExtraBold" size="20.0" />
                 </font>
             </Label>
-        </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="446.0" style="-fx-background-color: &quot;#201f1e&quot;;">
+        </children>
+        <Button layoutX="100.0"
+                layoutY="820.0"
+                mnemonicParsing="false"
+                prefHeight="60.0"
+                prefWidth="120.0"
+                onAction="#onReturnButtonClick"
+                text="Return to exercises"
+                style="-fx-background-color: &quot;#D8C4B6&quot;; -fx-background-radius: 5"
+                textFill="#fff"
+        />
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="446.0" style="-fx-background-color: &quot;#F5EFE7&quot;;">
         <children>
-            <Label layoutX="6.0" layoutY="-1.0" text="Solution" textFill="WHITE">
+            <Label layoutX="6.0" layoutY="-1.0" text="Solution" textFill="#213555">
                 <font>
                     <Font name="JetBrainsMono NF ExtraBold" size="20.0" />
                 </font>
             </Label>
             <TextArea layoutX="4.0" layoutY="37.0" prefHeight="720.0" prefWidth="556.0" promptText="Write down your solution" style="-fx-background-color: &quot;#000&quot;;" wrapText="true" />
-            <Button layoutX="560.0" layoutY="740.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" text="Run" />
+            <Button layoutX="560.0"
+                    layoutY="740.0"
+                    mnemonicParsing="false"
+                    prefHeight="26.0"
+                    prefWidth="58.0"
+                    text="Run"
+            />
+
         </children></AnchorPane>
 </items>
 </SplitPane>

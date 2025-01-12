@@ -8,13 +8,13 @@ It is a Desktop Application with:
 - For **each exercise** a different screen that contains a **description** of the problem, **instructions** and **examples**
 
 ## Landing page
-<img src = "assets/landing-page.png" width="600">
+<img src = "assets/landing-page.png" width="700">
 
 ## Home page
-<img src = "assets/home-page.png" width="600">
+<img src = "assets/home-page.png" width="700">
 
 ## Exercise page
-<img src = "assets/exercise-page.png" width="600">
+<img src = "assets/exercise-page.png" width="700">
 
 ## 🛠️ Tech stack
 - Java
